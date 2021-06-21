@@ -10,13 +10,21 @@ import rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.GetAllByClien
 import rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.SaveContact;
 
 
+/**
+ * Sistemska operacija koja azurira informacije o klijentu
+ * @author Ivana
+ *
+ */
 public class EditClient extends AbstractGenericOperation{
    
     @Override
     protected void preconditions(Object param) throws Exception {
         
     }
-
+    /**
+     * Metoda koja azurira informacije o klijentu
+     * @param  param Object kao zahtev koji se salje
+     */
     @Override
     protected void executeOperation(Object param) throws Exception {
         Client c=(Client) param;

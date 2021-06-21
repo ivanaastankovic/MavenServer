@@ -6,8 +6,21 @@ import java.util.List;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 import rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.SaveContact;
 
+/**
+ * Sistemska operacija za unos novog klijenta
+ * @author Ivana
+ *
+ */
 public class SaveClient extends AbstractGenericOperation{
+	/**
+	 * Client kao instanca klase Client
+	 */
     Client client;
+    /**
+     * Metoda koja proverava da li klijent vec postoji u sistemu
+     * @param param Object kao zahtev koji se salje 
+     * @throws Exception Ukoliko klijent vec postoji u sistemu
+     */
     @Override
     protected void preconditions(Object param) throws Exception {
         Client c=(Client)param;
@@ -20,6 +33,10 @@ public class SaveClient extends AbstractGenericOperation{
         
     }
 
+    /**
+     * Metoda koja dodaje novog klijenta i sve njegove kontakte u bazu
+     * @param param Object kao zahtev koji se salje
+     */
     @Override
     protected void executeOperation(Object param) throws Exception {
         Client c=(Client)param;
@@ -30,7 +47,11 @@ public class SaveClient extends AbstractGenericOperation{
              repository.add(contact);
         }
     }
-
+    
+    /**
+     * Metoda koja vraca instancu klase Client
+     * @return Client kao instanca klase Client
+     */
     public Client getClient() {
        return client;
                

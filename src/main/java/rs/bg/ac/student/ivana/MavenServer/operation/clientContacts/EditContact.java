@@ -4,8 +4,19 @@ import rs.bg.ac.student.ivana.MavenCommon.domain.ClientContacts;
 import java.util.List;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 
+/**
+ * Sistemska operacija koja azurira vrednosti kontakta klijenta
+ * @author Ivana
+ *
+ */
 public class EditContact extends AbstractGenericOperation{
 
+	
+	/**
+	 * Proverava da li telefon ili adresa vec postoje u kontaktima klijenta
+	 * @param  param Object kao zahtev koji se salje
+	 * @exception Ukoliko su telefon ili adresa vec u kontaktima klijenta
+	 */
     @Override
     protected void preconditions(Object param) throws Exception {
           ClientContacts cc=(ClientContacts)param;
@@ -19,6 +30,10 @@ public class EditContact extends AbstractGenericOperation{
         }
     }
 
+    /**
+     * Azurira informacije o kontaktu klijenta
+     * @param  param Object kao zahtev koji se salje
+     */
     @Override
     protected void executeOperation(Object param) throws Exception {
         ClientContacts cc=(ClientContacts)param;

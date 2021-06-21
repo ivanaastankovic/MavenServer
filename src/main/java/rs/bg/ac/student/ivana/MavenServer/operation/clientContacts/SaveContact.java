@@ -4,9 +4,18 @@ import rs.bg.ac.student.ivana.MavenCommon.domain.ClientContacts;
 import java.util.List;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 
-
+/**
+ * Sistemska operacija koja cuva novi kontakt klijenta
+ * @author Ivana
+ *
+ */
 public class SaveContact extends AbstractGenericOperation{
 
+	/**
+	 * Proverava da li je kontakt klijenta vec dodat u bazu
+	 * @param  param Object kao zahtev koji se salje
+	 * @throws Exception Ukoliko kontakt klijenta vec postoji
+	 */
     @Override
     protected void preconditions(Object param) throws Exception {
           ClientContacts cc=(ClientContacts)param;
@@ -20,6 +29,10 @@ public class SaveContact extends AbstractGenericOperation{
         }
     }
 
+    /**
+     * Dodaje novi kontakt klijenta u bazu
+     * @param  param Object kao zahtev koji se salje
+     */
     @Override
     protected void executeOperation(Object param) throws Exception {
         ClientContacts cc=(ClientContacts)param;

@@ -4,9 +4,18 @@ import rs.bg.ac.student.ivana.MavenCommon.domain.ClientContacts;
 import java.util.List;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 
-
+/**
+ * Sistemska operacija koja brise kontakt klijenta
+ * @author Ivana
+ *
+ */
 public class DeleteContact extends AbstractGenericOperation {
-
+	
+	/**
+	 * Proverava broj kontakata klijenta
+	 * @param  param Object kao zahtev koji se salje
+	 * @throws Exception Ukoliko klijent poseduje samo jedan kontakt
+	 */
     @Override
     protected void preconditions(Object param) throws Exception {
         GetAllByClientContacts op=new GetAllByClientContacts();
@@ -17,6 +26,10 @@ public class DeleteContact extends AbstractGenericOperation {
         }
     }
 
+    /**
+     * Brise kontakt klijenta
+     * @param param Object kao zahtev koji se salje
+     */
     @Override
     protected void executeOperation(Object param) throws Exception {
         ClientContacts cc=(ClientContacts) param;

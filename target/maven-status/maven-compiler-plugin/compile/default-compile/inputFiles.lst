@@ -11,11 +11,13 @@ C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivan
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\form\FrmServer.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\client\GetAllClients.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\riskType\AddRiskType.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\thread\ServerCommunication.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\clientContacts\SaveContact.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\repository\db\DBConnectionFactory.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\GetAllByID.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\client\EditClient.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\GetAllByClient.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\server\Server.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\client\DeleteClient.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\riskType\GetAllRiskTypes.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\repository\db\DBRepository.java

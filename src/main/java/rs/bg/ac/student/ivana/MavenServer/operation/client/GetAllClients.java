@@ -7,9 +7,15 @@ import java.util.List;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 import rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.GetAllByClientContacts;
 
-
+/**
+ * Sistemka operacija koja vraca sve klijente
+ * @author Ivana
+ *
+ */
 public class GetAllClients extends AbstractGenericOperation{
-     
+     /**
+      * List kao lista svih klijenata
+      */
     private List<Client> list;
     
     @Override
@@ -17,6 +23,11 @@ public class GetAllClients extends AbstractGenericOperation{
         
     }
 
+    /**
+     * Vraca sve klijente i kontakte tih klijenata
+     * @param param Object kao zahtev koji se salje
+     * 
+     */
     @Override
     protected void executeOperation(Object param) throws Exception {
         list=new ArrayList<>();
@@ -34,7 +45,11 @@ public class GetAllClients extends AbstractGenericOperation{
             
         }
     }
-
+    
+    /**
+     * Vraca listu klijenata
+     * @return List kao listu instanci klase Client
+     */
     public List<Client> getList() {
         return list;
     }
