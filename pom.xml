@@ -20,12 +20,12 @@
 
   <dependencies>
   
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
+   <dependency>
+		      <groupId>org.junit.jupiter</groupId>
+		      <artifactId>junit-jupiter</artifactId>
+		      <version>5.7.1</version>
+		      <scope>test</scope>
+    	</dependency>
     
     <dependency>
       <groupId>rs.bg.ac.student.ivana</groupId>
@@ -33,6 +33,12 @@
       <version>0.0.1-SNAPSHOT</version>
       <scope>compile</scope>
   	</dependency>	
+  	
+  	  <dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.25</version>
+	</dependency>
   </dependencies>
 
   <build>

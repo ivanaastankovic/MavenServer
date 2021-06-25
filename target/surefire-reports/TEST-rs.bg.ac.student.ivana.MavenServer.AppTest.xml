@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="rs.bg.ac.student.ivana.MavenServer.AppTest" time="0.153" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="rs.bg.ac.student.ivana.MavenServer.AppTest" time="0.14" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Ivana\eclipse-workspace\MavenServer\target\test-classes;C:\Users\Ivana\eclipse-workspace\MavenServer\target\classes;C:\Users\Ivana\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Ivana\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Ivana\.m2\repository\rs\bg\ac\student\ivana\MavenCommon\0.0.1-SNAPSHOT\MavenCommon-0.0.1-SNAPSHOT.jar;"/>
+    <property name="java.class.path" value="C:\Users\Ivana\eclipse-workspace\MavenServer\target\test-classes;C:\Users\Ivana\eclipse-workspace\MavenServer\target\classes;C:\Users\Ivana\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Ivana\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Ivana\.m2\repository\rs\bg\ac\student\ivana\MavenCommon\0.0.1-SNAPSHOT\MavenCommon-0.0.1-SNAPSHOT.jar;C:\Users\Ivana\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;C:\Users\Ivana\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\Ivana\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Ivana\AppData\Local\Temp\surefire1454382463700892234\surefirebooter13492399253262630190.jar C:\Users\Ivana\AppData\Local\Temp\surefire1454382463700892234 2021-06-21T00-46-47_341-jvmRun1 surefire16987103007850790245tmp surefire_01483862434880242395tmp"/>
+    <property name="sun.java.command" value="C:\Users\Ivana\AppData\Local\Temp\surefire8511786082747062178\surefirebooter494703090177173488.jar C:\Users\Ivana\AppData\Local\Temp\surefire8511786082747062178 2021-06-22T23-53-10_947-jvmRun1 surefire853853054160392056tmp surefire_016292759829357412389tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Ivana\eclipse-workspace\MavenServer\target\test-classes;C:\Users\Ivana\eclipse-workspace\MavenServer\target\classes;C:\Users\Ivana\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Ivana\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Ivana\.m2\repository\rs\bg\ac\student\ivana\MavenCommon\0.0.1-SNAPSHOT\MavenCommon-0.0.1-SNAPSHOT.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\Ivana\eclipse-workspace\MavenServer\target\test-classes;C:\Users\Ivana\eclipse-workspace\MavenServer\target\classes;C:\Users\Ivana\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Ivana\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Ivana\.m2\repository\rs\bg\ac\student\ivana\MavenCommon\0.0.1-SNAPSHOT\MavenCommon-0.0.1-SNAPSHOT.jar;C:\Users\Ivana\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;C:\Users\Ivana\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Ivana"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Ivana\AppData\Local\Temp\surefire1454382463700892234\surefirebooter13492399253262630190.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Ivana\AppData\Local\Temp\surefire8511786082747062178\surefirebooter494703090177173488.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -55,5 +55,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="rs.bg.ac.student.ivana.MavenServer.AppTest" time="0.005"/>
+  <testcase name="shouldAnswerWithTrue" classname="rs.bg.ac.student.ivana.MavenServer.AppTest" time="0.01"/>
 </testsuite>
