@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: rs.bg.ac.student.ivana.MavenServer.operation.client.GetAllClientsTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.511 s <<< FAILURE! - in rs.bg.ac.student.ivana.MavenServer.operation.client.GetAllClientsTest
+testExecuteOperation  Time elapsed: 0.419 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "rs.bg.ac.student.ivana.MavenCommon.domain.Client.getClientID()" because the return value of "rs.bg.ac.student.ivana.MavenCommon.domain.ClientContacts.getClient()" is null
+	at rs.bg.ac.student.ivana.MavenServer.operation.client.GetAllClientsTest.testExecuteOperation(GetAllClientsTest.java:59)
+

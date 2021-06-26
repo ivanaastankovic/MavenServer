@@ -37,6 +37,7 @@ public class GetAllClients extends AbstractGenericOperation{
             ClientContacts c=new ClientContacts();
             c.setId(client.getClientID());
             GetAllByClientContacts op=new GetAllByClientContacts();
+            c.setClient(client);  /// dodato
             op.execute(c);
             contacts=op.getList();
             for (ClientContacts con : contacts) {

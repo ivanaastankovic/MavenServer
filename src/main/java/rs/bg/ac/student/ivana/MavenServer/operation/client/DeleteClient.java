@@ -30,9 +30,9 @@ public class DeleteClient extends AbstractGenericOperation{
     protected void executeOperation(Object param) throws Exception {
         List<ClientContacts> contacts=((Client)param).getContacts();
         try{
+        	for (ClientContacts contact : contacts) {
+        		repository.delete(contact);
           repository.delete((Client)param);
-          for (ClientContacts contact : contacts) {
-            repository.delete(contact);
         }
         }catch(Exception ex){
             throw new Exception("active client");
