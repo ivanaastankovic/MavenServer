@@ -3,6 +3,7 @@ package rs.bg.ac.student.ivana.MavenServer.operation.client;
 import rs.bg.ac.student.ivana.MavenCommon.domain.Client;
 import rs.bg.ac.student.ivana.MavenCommon.domain.ClientContacts;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 import rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.GetAllByClientContacts;
@@ -41,6 +42,7 @@ public class GetAllClients extends AbstractGenericOperation{
             op.execute(c);
             contacts=op.getList();
             for (ClientContacts con : contacts) {
+            	client.setContacts(new LinkedList<ClientContacts>());// dodato
                 client.getContacts().add(con);
             }
             

@@ -1,2 +1,16 @@
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\GetAllByClientTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\GetAllByIDTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\riskType\AddRiskTypeTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\client\DeleteClientTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\riskType\GetAllRiskTypesTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\clientContacts\GetAllByClientContactsTest.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\client\GetAllClientsTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\riskType\DeleteRiskTypeTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\SaveClaimTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\client\EditClientTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\clientContacts\DeleteContactTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\client\GetAllByIDTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\client\SaveClientTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\clientContacts\SaveContactTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\GetAllClaimsTest.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\login\LogInTest.java

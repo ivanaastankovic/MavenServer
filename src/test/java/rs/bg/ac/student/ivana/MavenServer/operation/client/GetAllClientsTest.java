@@ -3,6 +3,7 @@ package rs.bg.ac.student.ivana.MavenServer.operation.client;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.FileOutputStream;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
 
@@ -13,10 +14,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import rs.bg.ac.student.ivana.MavenCommon.domain.Client;
+import rs.bg.ac.student.ivana.MavenCommon.domain.ClientContacts;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 import rs.bg.ac.student.ivana.MavenServer.operation.login.LogIn;
 
-class GetAllClientsTest {
+public class GetAllClientsTest {
 
 	private AbstractGenericOperation getAllClients;
 	@BeforeAll

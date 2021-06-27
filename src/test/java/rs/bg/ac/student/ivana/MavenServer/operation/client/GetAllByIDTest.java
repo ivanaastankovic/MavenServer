@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 import rs.bg.ac.student.ivana.MavenCommon.domain.Client;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 
-class GetAllByIDTest {
+public class GetAllByIDTest {
 	private AbstractGenericOperation getAllByID;
 	private static Client createdClient;
 	@BeforeAll
@@ -31,8 +31,7 @@ class GetAllByIDTest {
 
 	@AfterAll
 	static void tearDownAfterClass() throws Exception {
-		AbstractGenericOperation deleteClient = new DeleteClient();
-		deleteClient.execute(createdClient);
+		
 		FileOutputStream out = new FileOutputStream("config/dbconfig.properties");
 		Properties properties = new Properties();
         properties.setProperty("url", "jdbc:mysql://localhost:3306/database_osiguranje");

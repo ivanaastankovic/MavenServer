@@ -148,8 +148,10 @@ public class Controller {
     public Client getClientByJMBG(String jmbg_c) throws Exception {
         try{
         GetAllByID operation=new GetAllByID();
-        operation.setID(jmbg_c);
-        operation.execute(new Client());
+      //  operation.setID(jmbg_c);
+        Client c = new Client();
+        c.setJmbg(jmbg_c);
+        operation.execute(c);
         Client client=new Client();
         client=operation.getClient();
         client.setContacts(getAllContactsByClient(client));

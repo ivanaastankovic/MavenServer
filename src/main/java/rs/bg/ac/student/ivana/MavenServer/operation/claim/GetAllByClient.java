@@ -14,7 +14,7 @@ public class GetAllByClient extends AbstractGenericOperation{
 	/**
 	 * Client kao instanca klase Client
 	 */
-    private Client client;
+    public Client client;
     /**
      * List kao lista intanci klase Claim
      */
@@ -32,7 +32,8 @@ public class GetAllByClient extends AbstractGenericOperation{
      */
     @Override
     protected void executeOperation(Object param) throws Exception {
-        list=repository.getAllBy((Claim)param, "cl.jmbg", client.getJmbg());
+    	Claim claim = (Claim)param;
+        list=repository.getAllBy(claim, "cl.jmbg", claim.getClient().getJmbg());
         
     }
     /**

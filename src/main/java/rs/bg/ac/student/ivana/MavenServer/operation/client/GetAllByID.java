@@ -34,10 +34,10 @@ public class GetAllByID extends AbstractGenericOperation{
     @Override
     protected void executeOperation(Object param) throws Exception {
     	Client client = (Client)param;
-    	list=repository.getAllBy(client, " jmbg ",client.getJmbg() );
-    	/*
+    	list=repository.getAllBy(client, " jmbg ",client.getJmbg());
+    /*
         list=repository.getAllBy((Client)param, " jmbg ", id);  // dodato
-        */
+      */  
         if(list.isEmpty()){
             throw new Exception("there is no client with this jmbg");
         }

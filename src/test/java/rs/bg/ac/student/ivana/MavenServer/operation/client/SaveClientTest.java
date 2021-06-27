@@ -20,7 +20,7 @@ import rs.bg.ac.student.ivana.MavenCommon.domain.ContractType;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 import rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.SaveContact;
 
-class SaveClientTest {
+public class SaveClientTest {
 	private AbstractGenericOperation saveClient;
 	private static Client client;
 	@BeforeAll
@@ -76,7 +76,7 @@ class SaveClientTest {
 	@Test
 	void testExecuteOperation() throws Exception {
 		client.setClientID(12l);
-		client.setJmbg("1234567891230");
+		client.setJmbg("1234567891237");
 		client.setFirstName("Mika");
 		client.setLastName("Mikic");
 		client.setSignatureDate(new Date());

@@ -31,17 +31,18 @@ public class EditClient extends AbstractGenericOperation{
         GetAllByClientContacts op=new GetAllByClientContacts();
         ClientContacts cc=new ClientContacts();
         cc.setClient(c);
-       System.out.println(cc.getClient().getClientID());
+        System.out.println(cc.getClient().getClientID());
         op.execute(cc);
         List<ClientContacts> list=op.getList();
         
        
-            for (ClientContacts i : list) {
-                  if(!c.getContacts().contains(i)){
+        for (ClientContacts i : list) {
+              
+        	if(!c.getContacts().contains(i)){
                        DeleteContact dc=new DeleteContact();
                       dc.execute(i);
                   }
-            }
+        }
 
         
         for (ClientContacts i : c.getContacts()) {

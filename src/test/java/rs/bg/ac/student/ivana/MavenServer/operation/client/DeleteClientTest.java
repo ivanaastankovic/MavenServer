@@ -20,7 +20,7 @@ import rs.bg.ac.student.ivana.MavenCommon.domain.ClientContacts;
 import rs.bg.ac.student.ivana.MavenCommon.domain.ContractType;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
 
-class DeleteClientTest {
+public class DeleteClientTest {
 	private AbstractGenericOperation deleteClient;
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -67,7 +67,7 @@ class DeleteClientTest {
 		
 		client.setFirstName("Mika");
 		client.setLastName("Mikic");
-		client.setJmbg("1234567891230");
+		client.setJmbg("1234567891255");
 		Date date = new Date(System.currentTimeMillis());
 		client.setSignatureDate(date);
 		client.setContractType(ContractType.ONE_YEAR);
@@ -85,15 +85,16 @@ class DeleteClientTest {
 		AbstractGenericOperation saveClient = new SaveClient();
 		saveClient.execute(client);
 		
+		/*AbstractGenericOperation getClients =  new GetAllClients();
+		getClients.execute(new Client());
+		List<Client> clients = ((GetAllClients)getClients).getList();
+		assertEquals(2, clients.size());
+		*/
+		deleteClient.execute(client);
+		
 		AbstractGenericOperation getClients =  new GetAllClients();
 		getClients.execute(new Client());
 		List<Client> clients = ((GetAllClients)getClients).getList();
-
-		deleteClient.execute(client);
-		
-		getClients =  new GetAllClients();
-		getClients.execute(new Client());
-		clients = ((GetAllClients)getClients).getList();
 		
 		assertEquals(1, clients.size());
 	}

@@ -38,9 +38,16 @@
 	    <groupId>mysql</groupId>
 	    <artifactId>mysql-connector-java</artifactId>
 	    <version>8.0.25</version>
-	</dependency>
-  </dependencies>
+	  </dependency>
+ 
 
+   <dependency>
+      <groupId>rs.bg.ac.student.ivana</groupId>
+      <artifactId>MavenClient</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <scope>compile</scope>
+  	</dependency>	
+  	 </dependencies>
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
