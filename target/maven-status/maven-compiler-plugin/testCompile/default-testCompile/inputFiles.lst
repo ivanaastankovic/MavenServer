@@ -7,6 +7,7 @@ C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivan
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\client\GetAllClientsTest.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\riskType\DeleteRiskTypeTest.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\SaveClaimTest.java
+C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\EditClaimTest.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\clientContacts\DeleteContactTest.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\client\GetAllByIDTest.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\test\java\rs\bg\ac\student\ivana\MavenServer\operation\client\SaveClientTest.java

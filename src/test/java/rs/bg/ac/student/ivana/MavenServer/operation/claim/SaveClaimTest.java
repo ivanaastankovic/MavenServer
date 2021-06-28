@@ -73,7 +73,7 @@ public class SaveClaimTest {
 	}
 	@Test
 	void testExecuteOperation() throws Exception {
-	/*	Claim claim = new Claim();
+		Claim claim = new Claim();
 	
 		claim.setActivity("Act");
 		claim.setPaymentSum(new BigDecimal(200));
@@ -92,29 +92,22 @@ public class SaveClaimTest {
 		RiskType riskType = ((GetAllRiskTypes)getAllRiskTypes).getList().get(0);
 		claim.setRiskType(riskType);
 		
-		getClient.execute(client);
-		client = ((GetAllByID)getClient).getClient();
 		
 		AbstractGenericOperation getAllClaims = new GetAllClaims();
 		getAllClaims.execute(new Claim());
-		Claim c = ((GetAllClaims)getAllClaims).getList().get(0);
+		List<Claim> list1 =((GetAllClaims)getAllClaims).getList();
 		
-	//	Date date = c.getFileDate();
-		
-		///////////////////////////////////////////////////////////////////////////////
-		SimpleDateFormat format =  new SimpleDateFormat("yyyy-MM-dd");
-		String dateString = format.format(new Date());
-		Date date = format.parse("2021-06-29");
-		claim.setFileDate(date);
-		
+
 		saveClaim.execute(claim);
 		
 		getAllClaims = new GetAllClaims();
 		getAllClaims.execute(new Claim());
-		List<Claim> list = ((GetAllClaims)getAllClaims).getList();
-		assertNotNull(list);
-		assertEquals(2, list.size());
-*/
+		List<Claim> list2 = ((GetAllClaims)getAllClaims).getList();
+		assertNotNull(list2);
+		
+		assertEquals(list1.size()+1, list2.size());
+		
+		
 	}
 
 	

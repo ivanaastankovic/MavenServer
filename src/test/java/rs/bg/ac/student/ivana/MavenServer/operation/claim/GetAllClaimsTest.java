@@ -61,7 +61,6 @@ public class GetAllClaimsTest {
 		getAllClaims.execute(new Claim());
 		List<Claim> claims = ((GetAllClaims)getAllClaims).getList();
 		assertNotNull(claims);
-		assertEquals(1, claims.size());
 	}
 
 }

@@ -3,7 +3,6 @@ package rs.bg.ac.student.ivana.MavenServer.operation.claim;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.FileOutputStream;
-import java.util.List;
 import java.util.Properties;
 
 import org.junit.jupiter.api.AfterAll;
@@ -14,11 +13,11 @@ import org.junit.jupiter.api.Test;
 
 import rs.bg.ac.student.ivana.MavenCommon.domain.Claim;
 import rs.bg.ac.student.ivana.MavenCommon.domain.Client;
+import rs.bg.ac.student.ivana.MavenCommon.domain.Status;
 import rs.bg.ac.student.ivana.MavenServer.operation.AbstractGenericOperation;
-import rs.bg.ac.student.ivana.MavenServer.operation.client.GetAllByID;
 
-public class GetAllByClientTest {
-	private AbstractGenericOperation getAllByClient;
+public class EditClaimTest {
+	private AbstractGenericOperation editClaim;
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		FileOutputStream out = new FileOutputStream("config/dbconfig.properties");
@@ -42,31 +41,38 @@ public class GetAllByClientTest {
 	}
 	@BeforeEach
 	void setUp() throws Exception{
-		getAllByClient = new GetAllByClient();
+		editClaim = new EditClaim();
 	}
 	@AfterEach
 	void tearDown() throws Exception{
-		getAllByClient = null;
+		editClaim = null;
 	}
 	@Test
 	void constructorTest() {
-		getAllByClient = new GetAllByClient();
-		assertNotNull(getAllByClient);
+		editClaim = new EditClaim();
+		assertNotNull(editClaim);
+	}
+	@Test
+	void testPreconditionsNull() {
+		assertThrows(java.lang.Exception.class, () -> editClaim.execute(null));
 	}
 
 	@Test
-	void testExecuteOperation() throws Exception {
-		Client client = new Client();
-		client.setJmbg("1234567891234");
-		
-		
-		Claim c = new Claim();
-		c.setClient(client);
-		((GetAllByClient)getAllByClient).setClient(client);
-		getAllByClient.execute(c);
-		List<Claim> list = ((GetAllByClient)getAllByClient).getList();
-		assertNotNull(list);
+	void testPreconditionsNotInstance() {
+		assertThrows(java.lang.Exception.class, () -> editClaim.execute(new Client()));
 	}
+	
 
+	
+	@Test
+	void testExecuteOperation() throws Exception {
+		AbstractGenericOperation getClaimById = new GetAllByID();
+		Claim claim = new Claim();
+		claim.setClaimID(18l);
+		getClaimById.execute(claim);
+		Claim c = ((GetAllByID)getClaimById).getClaim();
+		c.setStatus(Status.PENDING);
+		editClaim.execute(c);
+	}
 
 }
