@@ -76,11 +76,7 @@ public class ServerCommunication extends Thread{
                             Claim claim_e=(Claim) request.getArgument();
                             Controller.getInstance().editClaim(claim_e);
                             break;
-                        case EDIT_CLIENT:
-                            Client client_e=(Client) request.getArgument();
-                            System.out.println(client_e.getClientID());
-                            Controller.getInstance().editClient(client_e);
-                            break;
+                    
                         case GETALL_CLAIMS:
                             response.setResult(Controller.getInstance().getAllClaims());
                             break;

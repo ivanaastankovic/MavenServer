@@ -73,7 +73,7 @@ public class SaveClaimTest {
 	}
 	@Test
 	void testExecuteOperation() throws Exception {
-		/*Claim claim = new Claim();
+	/*	Claim claim = new Claim();
 	
 		claim.setActivity("Act");
 		claim.setPaymentSum(new BigDecimal(200));
@@ -102,7 +102,7 @@ public class SaveClaimTest {
 	//	Date date = c.getFileDate();
 		
 		///////////////////////////////////////////////////////////////////////////////
-		/*SimpleDateFormat format =  new SimpleDateFormat("yyyy-mm-dd");
+		SimpleDateFormat format =  new SimpleDateFormat("yyyy-MM-dd");
 		String dateString = format.format(new Date());
 		Date date = format.parse("2021-06-29");
 		claim.setFileDate(date);
@@ -114,7 +114,7 @@ public class SaveClaimTest {
 		List<Claim> list = ((GetAllClaims)getAllClaims).getList();
 		assertNotNull(list);
 		assertEquals(2, list.size());
-	*/
+*/
 	}
 
 	

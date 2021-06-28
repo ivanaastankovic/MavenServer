@@ -33,6 +33,7 @@ public class GetAllByClient extends AbstractGenericOperation{
     @Override
     protected void executeOperation(Object param) throws Exception {
     	Claim claim = (Claim)param;
+    	claim.setClient(client);
         list=repository.getAllBy(claim, "cl.jmbg", claim.getClient().getJmbg());
         
     }

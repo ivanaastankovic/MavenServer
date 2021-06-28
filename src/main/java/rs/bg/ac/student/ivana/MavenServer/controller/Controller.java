@@ -16,7 +16,6 @@ import rs.bg.ac.student.ivana.MavenServer.operation.claim.GetAllByClient;
 import rs.bg.ac.student.ivana.MavenServer.operation.claim.GetAllClaims;
 import rs.bg.ac.student.ivana.MavenServer.operation.claim.SaveClaim;
 import rs.bg.ac.student.ivana.MavenServer.operation.client.DeleteClient;
-import rs.bg.ac.student.ivana.MavenServer.operation.client.EditClient;
 import rs.bg.ac.student.ivana.MavenServer.operation.client.GetAllByID;
 import rs.bg.ac.student.ivana.MavenServer.operation.client.SaveClient;
 import rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.GetAllByClientContacts;
@@ -26,7 +25,8 @@ import rs.bg.ac.student.ivana.MavenServer.operation.riskType.AddRiskType;
 import rs.bg.ac.student.ivana.MavenServer.operation.riskType.DeleteRiskType;
 import rs.bg.ac.student.ivana.MavenServer.operation.riskType.GetAllRiskTypes;
 import rs.bg.ac.student.ivana.MavenServer.server.Server;
-
+import java.util.Date;
+import java.text.SimpleDateFormat;
 public class Controller {
     
      private static Controller instance;
@@ -86,6 +86,10 @@ public class Controller {
     }
 
     public Claim addClaim(Claim claim) throws Exception {
+    	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    	String str= sdf.format(new Date());
+    	
+    	claim.setFileDate(sdf.parse(str));				///// dodato
         SaveClaim operation = new SaveClaim();
         operation.execute(claim);
         return operation.getClaim();
@@ -112,10 +116,6 @@ public class Controller {
         operation.execute(claim_e);
     }
 
-    public void editClient(Client client_e) throws Exception {
-         EditClient operation = new EditClient();
-        operation.execute(client_e);
-    }
 
     public List<Claim> getAllClaims() throws Exception {
           GetAllClaims operation = new GetAllClaims();

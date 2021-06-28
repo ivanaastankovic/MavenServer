@@ -1,6 +1,5 @@
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\App.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\AbstractGenericOperation.java
-C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\clientContacts\EditContact.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\repository\Repository.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\controller\Controller.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\SaveClaim.java
@@ -15,7 +14,6 @@ C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivan
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\clientContacts\SaveContact.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\repository\db\DBConnectionFactory.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\GetAllByID.java
-C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\client\EditClient.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\claim\GetAllByClient.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\server\Server.java
 C:\Users\Ivana\eclipse-workspace\MavenServer\src\main\java\rs\bg\ac\student\ivana\MavenServer\operation\client\DeleteClient.java

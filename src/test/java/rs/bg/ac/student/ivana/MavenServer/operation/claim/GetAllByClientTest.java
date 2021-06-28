@@ -58,11 +58,11 @@ public class GetAllByClientTest {
 	void testExecuteOperation() throws Exception {
 		Client client = new Client();
 		client.setJmbg("1234567891234");
-		AbstractGenericOperation getClient = new GetAllByID();
-		getClient.execute(client);
+		
 		
 		Claim c = new Claim();
 		c.setClient(client);
+		((GetAllByClient)getAllByClient).setClient(client);
 		getAllByClient.execute(c);
 		List<Claim> list = ((GetAllByClient)getAllByClient).getList();
 		assertNotNull(list);
