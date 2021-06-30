@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.DeleteContactTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.DeleteContactTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 s - in rs.bg.ac.student.ivana.MavenServer.operation.clientContacts.DeleteContactTest
